@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill Calculator</title>
+</head>
+<body>
+    <h1>Bill Calculator</h1>
+    <form action="/calculate" method="post">
+        <label for="bill_amount">Bill Amount:</label>
+        <input type="number" step="0.01" name="bill_amount" required><br>
+
+        <label for="discount_card">Discount Card:</label>
+        <input type="checkbox" name="discount_card"><br>
+
+        <label for="is_student">Student:</label>
+        <input type="checkbox" name="is_student"><br>
+
+        <label for="is_saturday">Saturday:</label>
+        <input type="checkbox" name="is_saturday"><br>
+
+        <input type="submit" value="Calculate">
+    </form>
+</body>
+</html>
